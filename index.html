@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scile=1.0">
+        <title>3x3按钮矩阵和点击次数显示</title>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <!--link rel="stylesheet" href="https://yuchengcai.github.io/Babysit-calculator/node_modules/nes/css/nes.css"-->
+        <link rel="stylesheet" href="./node_modules/nes/css/nes.css">
+        <!--link rel="stylesheet" href="https://yuchengcai.github.io/Babysit-calculator/style.css"-->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-for-text-and-button-and-gif" >
+                <div class="container-in-background-container">
+                    <div class="nes-container is-rounded">
+                        <div class="lists">
+                            <ul class="nes-list is-circle" id="tips">
+                                <li>-点击你希望给予孩子的--，去培养这个孩子成为你希望的模样吧</li>
+                            </ul>
+                        </div>
+            
+                        
+                        <div class="text-display">
+                            <textarea class="nes-textarea" id="clickCountsTextarea" rows="10" cols="30" readonly>
+                        
+                            </textarea>
+                        </div>
+                        <progress class="nes-progress"  id="progress-bar" value="0" max="100">
+        
+                        </progress>
+                    </div>
+                </div>
+                <div class="button-gif-container">
+                    <div class="video-container">
+                    
+                        <video src="./asset/img/gifandVideo/gif1.mp4" autoplay loop muted></video>
+    
+                    </div>
+                    <div class="button-container">
+                        <!-- 按钮将在这里动态生成 -->
+                    </div>
+                  
+                    <div class="video-container">
+                    
+                        <video src="./asset/img/gifandVideo/gif2.mp4" autoplay loop muted></video>
+    
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+            
+        
+    
+        <script src="script.js"></script>
+    </body>
+    </html>

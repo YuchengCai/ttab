@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Chinese-Zpix';
+    /*src: url('https://yuchengcai.github.io/Babysit-calculator/asset/font/zpix.ttf') format('truetype');*/
+    src: url('./asset/font/zpix.ttf');
+    font-weight: normal;
+    font-style:normal;
+    
+}
+
+body, html {
+    height: 100%; /* 使body和html占满整个视口高度 */
+    margin: 0; /* 移除默认的外边距 */
+    font-family: 'Chinese-Zpix',  'Press Start 2P', sans-serif; /* 设置默认字体 */
+}
+
+.container {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: row;
+    justify-content: center; /* 使子元素在主轴上均匀分布 */
+    align-items: center; /* 使子元素在交叉轴上居中对齐 */
+    height: 100%; /* 使容器占满整个视口高度 */
+    position: relative;/* 相对定位 */
+    z-index: 1; /* 设置z-index为1，确保它在其他元素之上 */;
+    background-color:rgb(118, 121, 121);
+    
+
+}
+
+
+
+
+.container-for-textand-button-and-gif {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column;
+    justify-content: center; /* 使子元素在主轴上均匀分布 */
+    align-items: center; /* 使子元素在交叉轴上居中对齐 */
+    height: 100%; /* 使容器占满整个视口高度 */
+    position: relative;/* 相对定位 */;
+    z-index: 3; /* 设置z-index为3，确保它在container之上 */;
+   
+
+
+}
+
+.container-in-background-container {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column;
+    justify-content: center; /* 使子元素在主轴上均匀分布 */
+    align-items: center; /* 使子元素在交叉轴上居中对齐 */
+    height: 100%; /* 使容器占满整个视口高度 */
+    padding: 190px; /* 外边距 */
+
+
+    position: relative;/* 相对定位 */;
+    z-index: 2; /* 设置z-index为2，确保它在container之上 */;
+    background-image: url('./asset/img/background/backgroundForContainer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   
+
+
+}
+
+.nes-container.is-rounded,
+.nes-textarea,
+.nes-progress {
+    background-color: transparent!important;
+}
+
+.container-for-gif {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column;
+    justify-content: center; /* 使子元素在主轴上均匀分布 */
+    align-items: center; /* 使子元素在交叉轴上居中对齐 */
+    height: 100%; /* 使容器占满整个视口高度 */
+    padding: 20px; /* 外边距 */
+    position:relative;
+    z-index: 4;
+}
+
+.button-gif-container {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: row;
+    justify-content: center; /* 使子元素在主轴上均匀分布 */
+    align-items: center; /* 使子元素在交叉轴上居中对齐 */
+    height: 100%; /* 使容器占满整个视口高度 */
+    
+}
+.button-container {
+    display: grid; /* 使用网格布局来排列按钮 */
+    grid-template-columns: repeat(3, 1fr); /* 创建3列，每列等宽 */
+    height: 100%;
+    gap: 50px; /* 设置网格项之间的间隔 */
+    padding: 50px; /* 外边距 */
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container video {
+   width: 80%;
+   transform: scale(0.8);
+  
+}
+
+button {
+    padding: 10px 40px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标悬停时显示指针手势 */
+    border: 1px solid #ddd; /* 边框 */
+    outline: none; /* 点击时不显示轮廓 */
+}
+
+.text-display {
+    flex-grow: 1; /* 使文本显示框容器在交叉轴上占据剩余空间 */
+    padding: 20px; /* 内边距 */
+}
+
+#clickCountsTextarea {
+    width: 700px; /* 文本框宽度占满容器宽度 */
+    height: 350px; /* 设置文本框高度 */
+    background: #ffffff; /* 背景色 */
+    padding: 10px; /* 内边距 */
+    font-size: 30px; /* 字体大小 */
+    resize: none; /* 禁止调整大小 */
+    border-width: 5px;
+}
+
+.nes-btn.is-primary{
+    padding: 10px 40px;/*nes样式按钮大小*/
+    font-size: 30px;
+    cursor: pointer; /* 鼠标悬停时显示指针手势 */
+    outline: none; /* 点击时不显示轮廓 */
+    
+
+
+
+}
